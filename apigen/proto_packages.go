@@ -43,7 +43,7 @@ func BuildProtoTypeMap() (map[string]*types.Package, map[string]*ProtoType, erro
 
 	// import all packages
 	allPackages := []string{
-		"github.com/paralin/go-dota2/protocol",
+		"github.com/dotabook/go-dota2/protocol",
 	}
 	for _, pak := range allPackages {
 		if err := importPak(pak); err != nil {
@@ -51,7 +51,7 @@ func BuildProtoTypeMap() (map[string]*types.Package, map[string]*ProtoType, erro
 		}
 	}
 
-	if err := importPak("github.com/paralin/go-steam/steamid"); err != nil {
+	if err := importPak("github.com/dotabook/go-steam/steamid"); err != nil {
 		return nil, nil, err
 	}
 

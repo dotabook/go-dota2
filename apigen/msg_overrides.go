@@ -1,8 +1,8 @@
 package main
 
 import (
+	dm "github.com/dotabook/go-dota2/protocol"
 	"github.com/golang/protobuf/proto"
-	dm "github.com/paralin/go-dota2/protocol"
 )
 
 // msgSenderOverrides overrides the heuristic-generated sender parties for each message

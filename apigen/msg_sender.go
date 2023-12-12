@@ -3,8 +3,8 @@ package main
 import (
 	"strings"
 
+	"github.com/dotabook/go-dota2/protocol"
 	"github.com/fatih/camelcase"
-	"github.com/paralin/go-dota2/protocol"
 )
 
 // MsgSender is the sender type of a message.

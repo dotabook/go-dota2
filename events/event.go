@@ -1,8 +1,8 @@
 package events
 
 import (
+	"github.com/dotabook/go-dota2/protocol"
 	"github.com/golang/protobuf/proto"
-	"github.com/paralin/go-dota2/protocol"
 )
 
 // Event is a DOTA event.

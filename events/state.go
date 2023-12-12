@@ -1,7 +1,7 @@
 package events
 
 import (
-	"github.com/paralin/go-dota2/state"
+	"github.com/dotabook/go-dota2/state"
 )
 
 // ClientStateChanged is emitted whenever anything about the client state changes.

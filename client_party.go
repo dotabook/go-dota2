@@ -1,7 +1,7 @@
 package dota2
 
 import (
-	bgcm "github.com/paralin/go-dota2/protocol"
+	bgcm "github.com/dotabook/go-dota2/protocol"
 )
 
 // LeaveParty attempts to leave the current party.
@@ -13,6 +13,6 @@ func (d *Dota2) LeaveParty() {
 func (d *Dota2) RespondPartyInvite(partyId uint64, accept bool) {
 	d.write(uint32(bgcm.EGCBaseMsg_k_EMsgGCPartyInviteResponse), &bgcm.CMsgPartyInviteResponse{
 		PartyId: &partyId,
-		Accept: &accept,
+		Accept:  &accept,
 	})
 }

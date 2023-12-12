@@ -1,11 +1,11 @@
 # Dota2
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/paralin/go-dota2.svg)](https://pkg.go.dev/github.com/paralin/go-dota2)
+[![Go Reference](https://pkg.go.dev/badge/github.com/dotabook/go-dota2.svg)](https://pkg.go.dev/github.com/dotabook/go-dota2)
 [![Go Report Card Widget]][Go Report Card]
 [![DOI](https://zenodo.org/badge/103461337.svg)](https://zenodo.org/badge/latestdoi/103461337)
 
-[Go Report Card Widget]: https://goreportcard.com/badge/github.com/paralin/go-dota2
-[Go Report Card]: https://goreportcard.com/report/github.com/paralin/go-dota2
+[Go Report Card Widget]: https://goreportcard.com/badge/github.com/dotabook/go-dota2
+[Go Report Card]: https://goreportcard.com/report/github.com/dotabook/go-dota2
 
 ## Introduction 
 
@@ -13,7 +13,7 @@
 
 Games implemented:
 
- - [dota2](https://github.com/paralin/go-dota2)
+ - [dota2](https://github.com/dotabook/go-dota2)
  - [underlords](https://github.com/paralin/go-underlords)
 
 Also see: the old [C#/SteamKit Implementation](https://github.com/paralin/Dota2).
@@ -47,8 +47,8 @@ This mechanism is used everywhere, these objects are not exposed in their own ev
 
 ```go
 import (
-	gcmm "github.com/paralin/go-dota2/protocol"
-	"github.com/paralin/go-dota2/cso"
+	gcmm "github.com/dotabook/go-dota2/protocol"
+	"github.com/dotabook/go-dota2/cso"
 )
 
 eventCh, eventCancel, err := dota.GetCache().SubscribeType(cso.Lobby)
@@ -76,4 +76,4 @@ This means that ALL of the Dota API will be available in this codebase, although
 
 ## go-steam Dependency
 
-This library depends on [go-steam](https://github.com/paralin/go-steam).
+This library depends on [go-steam](https://github.com/dotabook/go-steam).

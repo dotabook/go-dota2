@@ -9,7 +9,7 @@ import (
 	"strings"
 	"unicode"
 
-	gcm "github.com/paralin/go-dota2/protocol"
+	gcm "github.com/dotabook/go-dota2/protocol"
 	"github.com/pkg/errors"
 	"github.com/serenize/snaker"
 )
@@ -29,14 +29,14 @@ func GenerateAPI(ctx context.Context, clientOutput, eventsOutput io.Writer) erro
 	var requestFuncs []*generatedRequestFunc
 
 	eventsImports := make(map[string]struct{})
-	eventsImports["github.com/paralin/go-dota2/protocol"] = struct{}{}
+	eventsImports["github.com/dotabook/go-dota2/protocol"] = struct{}{}
 	eventsImports["github.com/golang/protobuf/proto"] = struct{}{}
 
 	clientImports := make(map[string]struct{})
 	clientImports["context"] = struct{}{}
-	clientImports["github.com/paralin/go-dota2/protocol"] = struct{}{}
-	clientImports["github.com/paralin/go-steam/steamid"] = struct{}{}
-	clientImports["github.com/paralin/go-dota2/events"] = struct{}{}
+	clientImports["github.com/dotabook/go-dota2/protocol"] = struct{}{}
+	clientImports["github.com/dotabook/go-steam/steamid"] = struct{}{}
+	clientImports["github.com/dotabook/go-dota2/events"] = struct{}{}
 
 	// responseMsgs are messages that are known to be responses.
 	responseMsgs := make(map[gcm.EDOTAGCMsg]struct{})
@@ -162,7 +162,7 @@ func GenerateAPI(ctx context.Context, clientOutput, eventsOutput io.Writer) erro
 					reqFieldType = types.NewNamed(
 						types.NewTypeName(
 							0,
-							packageMap["github.com/paralin/go-steam/steamid"],
+							packageMap["github.com/dotabook/go-steam/steamid"],
 							"SteamId",
 							reqFieldType,
 						),

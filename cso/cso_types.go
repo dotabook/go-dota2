@@ -1,15 +1,16 @@
 package cso
 
 import (
+	bgcm "github.com/dotabook/go-dota2/protocol"
+	gcclm "github.com/dotabook/go-dota2/protocol"
+	gccm "github.com/dotabook/go-dota2/protocol"
+	gcmm "github.com/dotabook/go-dota2/protocol"
 	"github.com/golang/protobuf/proto"
-	bgcm "github.com/paralin/go-dota2/protocol"
-	gcclm "github.com/paralin/go-dota2/protocol"
-	gccm "github.com/paralin/go-dota2/protocol"
-	gcmm "github.com/paralin/go-dota2/protocol"
 	"github.com/pkg/errors"
 )
 
 // CSOType is a shared object type identifier.
+//
 //go:generate stringer -type=CSOType
 type CSOType int32
 

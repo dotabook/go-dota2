@@ -5,8 +5,8 @@ import (
 	"go/types"
 	"strings"
 
+	gcm "github.com/dotabook/go-dota2/protocol"
 	"github.com/fatih/camelcase"
-	gcm "github.com/paralin/go-dota2/protocol"
 	"github.com/pkg/errors"
 )
 
