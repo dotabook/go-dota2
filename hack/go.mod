@@ -3,10 +3,10 @@ module github.com/paralin/genproto/tools
 go 1.19
 
 // note: protobuf is intentionally held at 1.3.x
-replace github.com/golang/protobuf => github.com/aperturerobotics/go-protobuf-1.3.x v0.0.0-20200726220404-fa7f51c52df0 // aperture-1.3.x
+replace google.golang.org/protobuf => github.com/aperturerobotics/go-protobuf-1.3.x v0.0.0-20200726220404-fa7f51c52df0 // aperture-1.3.x
 
 require (
-	github.com/golang/protobuf v1.5.3
+	google.golang.org/protobuf v1.5.3
 	github.com/golangci/golangci-lint v1.55.2
 	github.com/square/goprotowrap v0.0.0-20220325193554-9257bb483144
 )

@@ -5,8 +5,8 @@ import (
 	gcclm "github.com/dotabook/go-dota2/protocol"
 	gccm "github.com/dotabook/go-dota2/protocol"
 	gcmm "github.com/dotabook/go-dota2/protocol"
-	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
+	"google.golang.org/protobuf/proto"
 )
 
 // CSOType is a shared object type identifier.

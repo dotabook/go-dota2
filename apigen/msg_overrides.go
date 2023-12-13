@@ -2,7 +2,7 @@ package main
 
 import (
 	dm "github.com/dotabook/go-dota2/protocol"
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 )
 
 // msgSenderOverrides overrides the heuristic-generated sender parties for each message

@@ -7,8 +7,8 @@ import (
 
 	"github.com/dotabook/go-steam"
 	"github.com/dotabook/go-steam/protocol/gamecoordinator"
-	"github.com/golang/protobuf/proto"
 	"github.com/sirupsen/logrus"
+	"google.golang.org/protobuf/proto"
 
 	devents "github.com/dotabook/go-dota2/events"
 	bgcm "github.com/dotabook/go-dota2/protocol"
