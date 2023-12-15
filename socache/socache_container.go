@@ -4,9 +4,9 @@ import (
 	"math/rand"
 	"sync"
 
-	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
+	"google.golang.org/protobuf/proto"
 
 	"github.com/dotabook/go-dota2/cso"
 	gcsdkm "github.com/dotabook/go-dota2/protocol"

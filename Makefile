@@ -1,4 +1,4 @@
-PROTOWRAP=hack/bin/protowrap
+# PROTOWRAP=hack/bin/protowrap
 PROTOC_GEN_GO=hack/bin/protoc-gen-go
 GOLANGCI_LINT=hack/bin/golangci-lint
 export GO111MODULE=on
@@ -9,17 +9,17 @@ all:
 vendor:
 	go mod vendor
 
-$(PROTOC_GEN_GO):
-	cd ./hack; \
-	go build -v \
-		-o ./bin/protoc-gen-go \
-		google.golang.org/protobuf/protoc-gen-go
+# $(PROTOC_GEN_GO):
+# 	cd ./hack; \
+# 	go build -v \
+# 		-o ./bin/protoc-gen-go \
+# 		google.golang.org/protobuf/protoc-gen-go
 
-$(PROTOWRAP):
-	cd ./hack; \
-	go build -v \
-		-o ./bin/protowrap \
-		github.com/square/goprotowrap/cmd/protowrap
+# $(PROTOWRAP):
+# 	cd ./hack; \
+# 	go build -v \
+# 		-o ./bin/protowrap \
+# 		github.com/square/goprotowrap/cmd/protowrap
 
 $(GOLANGCI_LINT):
 	cd ./hack; \
@@ -27,7 +27,7 @@ $(GOLANGCI_LINT):
 		-o ./bin/golangci-lint \
 		github.com/golangci/golangci-lint/cmd/golangci-lint
 
-gengo: $(PROTOWRAP) $(PROTOC_GEN_GO) vendor
+gengo: $(PROTOC_GEN_GO) vendor
 	export PATH=$$(pwd)/hack/bin:$${PATH}; \
 	cd ./generator && ./update_protos.bash; \
 	cd ../apigen && ./apigen.bash

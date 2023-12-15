@@ -1,6 +1,8 @@
 syntax = "proto2";
 package protocol;
 
+option go_package = "github.com/dotabook/go-dota2/protocol";
+
 enum ESOMsg {
 	k_ESOMsg_Create = 21;
 	k_ESOMsg_Update = 22;

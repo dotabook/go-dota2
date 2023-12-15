@@ -1,6 +1,8 @@
 syntax = "proto2";
 package protocol;
 
+option go_package = "github.com/dotabook/go-dota2/protocol";
+
 enum EDOTAGCMsg {
 	k_EMsgGCDOTABase = 7000;
 	k_EMsgGCGameMatchSignOut = 7004;

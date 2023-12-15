@@ -1,6 +1,8 @@
 syntax = "proto2";
 package protocol;
 
+option go_package = "github.com/dotabook/go-dota2/protocol";
+
 import "steammessages.proto";
 import "dota_shared_enums.proto";
 import "dota_gcmessages_common.proto";

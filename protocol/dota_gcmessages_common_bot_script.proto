@@ -1,6 +1,8 @@
 syntax = "proto2";
 package protocol;
 
+option go_package = "github.com/dotabook/go-dota2/protocol";
+
 import "valveextensions.proto";
 
 message CMsgBotWorldState {
