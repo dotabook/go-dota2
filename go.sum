@@ -5,6 +5,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dotabook/go-steam v1.0.5 h1:fylCRQPMn37iBbECTD9IxrQR08I4vNP0dgkLNHwW80Y=
 github.com/dotabook/go-steam v1.0.5/go.mod h1:AoZxgs69oynQP32w3QU/hoG3tv/tyOlqQkMwkwLM8P8=
+github.com/dotabook/go-steam v1.0.6 h1:a7qqwtGdISwVo+OPEApy9Xh45kwjM2wvJadm/srH0A4=
+github.com/dotabook/go-steam v1.0.6/go.mod h1:wmwdvaR8Latexs90BVy8/SzOA6HTrrUeVGPTdmU+Y4M=
 github.com/fatih/camelcase v1.0.0 h1:hxNvNX/xYBp0ovncs8WyWZrOrpBNub/JfaMvbURyft8=
 github.com/fatih/camelcase v1.0.0/go.mod h1:yN2Sb0lFhZJUdVvtELVWefmrXpuZESvPmqwoZc+/fpc=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
