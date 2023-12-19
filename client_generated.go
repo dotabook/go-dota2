@@ -2,7 +2,6 @@ package dota2
 
 import (
 	"context"
-
 	"github.com/dotabook/go-dota2/events"
 	"github.com/dotabook/go-dota2/protocol"
 	"github.com/dotabook/go-steam/steamid"
