@@ -3,7 +3,7 @@ module github.com/dotabook/go-dota2
 go 1.21.0
 
 require (
-	github.com/dotabook/go-steam v1.0.6
+	github.com/dotabook/go-steam v1.0.10
 	github.com/fatih/camelcase v1.0.0
 	github.com/pkg/errors v0.9.1
 	github.com/serenize/snaker v0.0.0-20201027110005-a7ad2135616e
